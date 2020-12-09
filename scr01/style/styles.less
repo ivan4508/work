@@ -161,6 +161,7 @@
 .broadcast{
     background-image: url("../img/background/image_6.jpg");
     padding-top:150px;
+    padding-bottom:14%;
     background-size: cover;
     background-repeat: no-repeat;
     p{
@@ -185,6 +186,19 @@
         }
     }
 .old_city{
+    canvas{
+        &.karaoke{
+            position: absolute;
+            transform: translate(-50%,-22%);
+            @media (max-width:576px) {
+                display: none;
+            }
+            @media (min-width:768px) and (max-width:992px) {
+                transform: translate(-50%,77%);
+            }
+        }
+    }
+    padding-top: 15%;
     text-align: center;
     background: url("../img/background/old_city_back.png") no-repeat ; 
     background-size: 110% 100%;
@@ -232,7 +246,7 @@
     button{
         border:1px solid @button_old_city;
         color:@button_old_city;
-        min-width: 198px;
+        min-width: 213px;
         &:hover{
             color:#e219e28c;
             border:1px solid #e219e28cy;
@@ -424,6 +438,7 @@ footer{
 
         &:hover{
             text-decoration: none;
+            color:#c6c6c69e;
         }
     }
     h3{

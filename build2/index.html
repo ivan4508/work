@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="src/data.js"></script>
 	<script type="text/javascript" src="./src/main.js"></script>
 	<!-- <link rel="stylesheet" type="text/css" href="style/style.css"> -->
-	<link rel="stylesheet" type="text/css" href="./style/styles.css">
+	<link rel="stylesheet" type="text/css" href="./style/styles.css?v=1">
 
 	<link rel="shortcut icon" href="img/logo.png" type="image/png">
 
@@ -44,7 +44,7 @@
 			<div class="header fixed-top">
 		<nav class="navbar navbar-expand-lg navbar-light "><!--navbar-expand-lg заменить на navbar-expand-xl-->
 			<a class="navbar-brand" href="#">
-				<img src="img/logo.png" alt="">
+				<img class="img-fluid" src="img/logo.png" alt="">
 				<span>СТАРЫЙ ГОРОД</span>
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -635,11 +635,18 @@ data-keyboard="true">
 <section class="old_city mt-3 pb-5" >
 	
 	<div class="container pb-0 pb-md-5">
-		<div class="row row-cols-2 row-cols-sm-1 text-white py-md-5 pt-0" id="karaoke">
-			<div class="col-9 d-block d-md-flex col-md-6  m-auto pt-5" >
+		<div class="row">
+			<div class="col-12 col-md-6 text-center mb-5">
+			<canvas class="karaoke img-fluid old_city_h2_back canvas_01 " width="510px" height="209px" data-context="Караоке"></canvas>
+			</div>
+		</div>
+		<div class="row row-cols-2 row-cols-sm-1 text-white pb-md-5 " id="karaoke">
+
+			<div class="col-9 d-block d-md-flex col-md-6  m-auto " >
+
 				<img class="img-fluid" src="./img/background/frame150.png" alt="Кальян">
 			</div>
-			<div class="col-12 col-md-6 pt-0 pt-md-5">
+			<div class="col-12 col-md-6 pt-0 ">
 <!-- 			  	---------
 			  	Делал canvas
 			  	---------
@@ -652,7 +659,7 @@ data-keyboard="true">
 			  	---------
 			  	Делал canvas
 			  	--------- -->
-			  	<img class="mt-0 mt-md-5" src="./img/background/old_city.png" alt="Заголовок">
+			  	<img class="mt-0" src="./img/background/old_city.png" alt="Заголовок">
 
 
 			  	<div class="btn-group d-flex d-sm-block flex-column flex-sm-row" role="group" aria-label="Basic example">
@@ -675,7 +682,7 @@ data-keyboard="true">
 				<canvas class="old_city_h2_back canvas_01 img-fluid" width="900px" height="165px" data-context="Старый Город"></canvas>
 			</div>
 			<div class="row  row-cols-sm-1 text-white pb-5" id="hookah">
-				<div class="col-12 col-md-6 pt-0 pt-md-5">
+				<div class="col-12 col-md-6">
 		<!--	  	------
  			  	делал canvas
 			  	------
@@ -727,8 +734,14 @@ data-keyboard="true">
 		</section>
 		<section class="contact not_style">
 			<div class="container">
+						<div class="row">
+						<div class="col-12 text-center">
+							<h3>Контакты</h3>
+						</div>
+						</div>
 				<div class="row row-cols-3 row-cols-md-2  row-col-lg-1">
 					<!-- <div class="col-12 d-flex justify-content-around text-center"> -->
+
 
 
 						<div class="card text-center text-center not_style border-0 col-sm-6 col-12  col-lg-3">
@@ -768,8 +781,8 @@ data-keyboard="true">
 							<h3 class="tex-center">Бесплатная парковка для гостей</h3>
 
 
-							<div class="contact_btn" role="group" aria-label="Basic example">
-								<button type="button" class="btn btn-sm mb-2 bg-transparent">Написать нам</button>
+							<div class="contact_btn btn-group d-flex d-sm-block flex-column flex-sm-row text-center" role="group" aria-label="Basic example">
+								<button type="button" class="btn btn-sm mb-2 ">Написать нам</button>
 								<button type="button" class="btn mb-2 btn-sm">Заказать звонок</button>
 							</div>
 
@@ -832,7 +845,8 @@ data-keyboard="true">
 						<div class="col-12 col-md-3 text-center">
 							<h3>Контакты</h3>
 							<ul class="list-unstyled lis">
-								<li> <a href="tel:+7 495 517-22-09"></a>+7 (495) 517-22-09</li>
+								<li> <a href="tel:+7 495 517-22-09">+7 (495) 517-22-09</a></li>
+
 								<li><a href="tel:+7 (968) 091-55-51">+7 (968) 091-55-51</a></li>
 								<li><a href="tel:+7 (968) 091-55-52">+7 (968) 091-55-52</a></li>
 								<li><a href="tel:+7 (968) 091-55-53">+7 (968) 091-55-53</a></li>
@@ -851,7 +865,7 @@ data-keyboard="true">
 								<li>ООО «БКФ»</li>
 								<li>Режим работы: <br>с 11:00 до 01:00,без выходных</li>
 							</ul>
-						</ul>	
+						</ul>
 
 					</div>
 				</div>
