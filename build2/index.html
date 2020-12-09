@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+	<script
+	src="https://code.jquery.com/jquery-3.5.1.min.js"
+	integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+	crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="src/script.js"></script>
+	<script type="text/javascript" src="src/data.js"></script>
+	<script type="text/javascript" src="./src/main.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="style/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="./style/styles.css?v=1">
+
+	<link rel="shortcut icon" href="img/logo.png" type="image/png">
+
+	<!--fullpage-->
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/easings.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/scrolloverflow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"> -->
+
+	<!--Swiper-->
+	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+	<title>СТАРЫЙ ГОРОД</title>
+</head> 
+<body data-spy="scroll" data-target=".navbar" data-offset="150">
+
+
+
+	<div class="body container-fluid" id="fullpage">
+			<div class="header fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-light "><!--navbar-expand-lg заменить на navbar-expand-xl-->
+			<a class="navbar-brand" href="#">
+				<img class="img-fluid" src="img/logo.png" alt="">
+				<span>СТАРЫЙ ГОРОД</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class=" "></span> <!--   класс стандартной кнопки-бургера - navbar-toggler-icon -->
+			</button>
+			<div class="collapse navbar-collapse " id="navbarText">
+				<ul class="nav mr-auto" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" href="#about">О нас</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#menu">Меню</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#lunch">Бизнес-Ланч</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#events">Мероприятия</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#photo">Галерея</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#karaoke">Караоке</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#hookah">Кальян</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#sport-translations">Спорт-Трансляции</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://tyteda.ru/" target="blank">Доставка</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="tel:+7(495)888-88-88">+7(495)517-22-09</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+		<a class="cart-button" href="#menu"></a>
+
+		<div class="about section container-fluid" id="about" style="
+		">
+		<div class="row col-lg-12">
+			<div class="col-lg-5 about-text">
+				<div>
+					<h1>Старый Город</h1>
+					<h2>кафе-бар</h2>
+					<span>Мы рады видеть вас среди своих гостей! Готовы вам предложить уютную атмосферу и разнообразную кухню. К вашим услугам бар, караоке, кальян и трансляции лучших спортивных мероприятий. Работаем для вас с 2012. Подходящее кафе для любой встречи - все останутся довольны!  
+					</span>
+				</div>
+				<div class="socials">
+					<a href="https://vk.com/sg.cafebar"><img src="img/socials/vk.png"></a>
+					<a href="https://instagram.com/sg.cafebar?igshid=4195vx992cey"><img src="img/socials/inst.png"></a>
+					<a href="https://www.facebook.com/sg.cafebar"><img src="img/socials/fb.png"></a>
+				</div>
+				<button class="btn">Хочу узнать больше!</button>
+			</div>
+
+			<div class="col-lg-7 col-md-12 swiper">
+				<div class="swiper-slide"><img class="img-fluid" src="img/banners/lunch.png"></div>
+				<div class="swiper-slide"><img class="img-fluid" src="img/banners/tort.png"></div>
+				<div class="swiper-slide"><img class="img-fluid" src="img/banners/banquet.png"></div>
+			</div>	 
+		</div>
+	</div>
+
+	<div class="menu-order container my-5">
+		<h5>Рассчитаем стоимость заказа за 4 шага</h5>
+			<div class="row row-cols-3 row-cols-md-2 row-cols-lg-1">
+				<div class="col-12 col-md-6 col-lg-3 text-center">
+					<img class="img-fluid" src="./img/menu-order/select-item.png"></div>
+				<div class="col-12 col-md-6 col-lg-3 text-center">
+					<img class="img-fluid text-center" src="./img/menu-order/add-item.png"></div>
+				<div class="col-12 col-md-6 col-lg-3 text-center">
+					<img class="img-fluid" src="./img/menu-order/goto-order.png"></div>
+				<div class="col-12 col-md-6 col-lg-3 text-center">
+					<img class="img-fluid" clas src="./img/menu-order/select-date.png">
+				</div>
+				</div>
+			</div>
+
+					<div class="container-fluid" id="menu">
+			<!-- <div class="row menu ">
+				<div class="col-sm-2 menu-items">
+					<ul class="list-group">
+						<li class="list-group-item primary main-menu">Основное меню</li>
+						<li class="list-group-item secondary main-submenu" data-target="coldDishes">Холодные закуски</li>
+						<li class="list-group-item secondary main-submenu" data-target="salad">Салаты</li>
+						<li class="list-group-item secondary main-submenu" data-target="hotDishes">Горячие закуски</li>
+						<li class="list-group-item secondary main-submenu" data-target="firstMeal">Первые блюда</li>
+						<li class="list-group-item secondary main-submenu" data-target="mainMeal">Горячие блюда</li>
+						<li class="list-group-item secondary main-submenu" data-target="bbqDishes">Блюда на мангале</li>
+						<li class="list-group-item secondary main-submenu" data-target="bigCompanyDishes">Блюда для большой компании</li>
+						<li class="list-group-item secondary main-submenu" data-target="paste">Паста</li>
+						<li class="list-group-item secondary main-submenu" data-target="sideDishes">Гарнир</li>
+						<li class="list-group-item secondary main-submenu" data-target="pizza">Пицца</li>
+						<li class="list-group-item secondary main-submenu" data-target="khachapuri">Хачапури</li>
+						<li class="list-group-item secondary main-submenu" data-target="pies">Осетинские пироги</li>
+						<li class="list-group-item secondary main-submenu" data-target="pancakes">Блины</li>
+						<li class="list-group-item secondary main-submenu" data-target="burger">Бургеры</li>
+						<li class="list-group-item secondary main-submenu" data-target="beerDishes">Закуски к пиву</li>
+						<li class="list-group-item secondary main-submenu" data-target="sauces">Соусы</li>
+						<li class="list-group-item secondary main-submenu" data-target="bread">Хлеб</li>
+						<li class="list-group-item secondary main-submenu" data-target="desert">Десерты</li>
+
+						<li class="list-group-item primary bar-menu">Барное меню</li>
+						<li class="list-group-item secondary bar-submenu">Шоты</li>
+						<li class="list-group-item secondary bar-submenu">Апперетив</li>
+						<li class="list-group-item secondary bar-submenu">Коктейли</li>
+						<li class="list-group-item secondary bar-submenu">Вино белое</li>
+						<li class="list-group-item secondary bar-submenu">Вино розовое</li>
+						<li class="list-group-item secondary bar-submenu">Вино красное</li>
+						<li class="list-group-item secondary bar-submenu">Вино игристое</li>
+						<li class="list-group-item secondary bar-submenu">Крепкий алкоголь</li>
+						<li class="list-group-item secondary bar-submenu">Пиво бутылочное</li>
+						<li class="list-group-item secondary bar-submenu">Пиво разливное</li>
+						<li class="list-group-item secondary bar-submenu">Напитки</li>
+						<li class="list-group-item secondary bar-submenu">Чай и кофе</li>
+						<li class="list-group-item secondary bar-submenu">Курительные наборы</li>
+
+						<li class="list-group-item primary hookah-menu">Кальянная карта</li>
+						<li class="list-group-item secondary hookah-submenu">Кальяны</li>
+						<li class="list-group-item secondary hookah-submenu">Фрутовые чаши</li>
+						<li class="list-group-item secondary hookah-submenu">Добавки в колбу</li>
+
+						<li class="list-group-item primary banquet-menu">Банкетное меню</li>
+						<li class="list-group-item secondary banquet-submenu">Холодные закуски</li>
+						<li class="list-group-item secondary banquet-submenu">Салаты</li>
+						<li class="list-group-item secondary banquet-submenu">Горячие закуски</li>
+						<li class="list-group-item secondary banquet-submenu">Горячие блюда</li>
+						<li class="list-group-item secondary banquet-submenu">Паста</li>
+						<li class="list-group-item secondary banquet-submenu">Гарнир</li>
+						<li class="list-group-item secondary banquet-submenu">Пицца</li>
+						<li class="list-group-item secondary banquet-submenu">Хачапури</li>
+						<li class="list-group-item secondary banquet-submenu">Осетинские пироги</li>
+						<li class="list-group-item secondary banquet-submenu">Блины</li>
+						<li class="list-group-item secondary banquet-submenu">Закуски к пиву</li>
+						<li class="list-group-item secondary banquet-submenu">Блины</li>
+						<li class="list-group-item secondary banquet-submenu">Соусы</li>
+						<li class="list-group-item secondary banquet-submenu">Хлеб</li>
+						<li class="list-group-item secondary banquet-submenu">Десерты</li>
+
+						<li class="list-group-item primary special-menu">Поминальное меню</li>
+						<li class="list-group-item secondary special-submenu">Первые блюда</li>
+						<li class="list-group-item secondary special-submenu">Традиционная трапеза</li>
+						<li class="list-group-item secondary special-submenu">Блины</li>
+						<li class="list-group-item secondary special-submenu">Холодные закуски</li>
+						<li class="list-group-item secondary special-submenu">Салаты</li>
+						<li class="list-group-item secondary special-submenu">Горячие закуски</li>
+						<li class="list-group-item secondary special-submenu">Хачапури</li>
+						<li class="list-group-item secondary special-submenu">Осетинские пироги</li>
+						<li class="list-group-item secondary special-submenu">Горячее к гарниру</li>
+						<li class="list-group-item secondary special-submenu">Гарнир</li>
+						<li class="list-group-item secondary special-submenu">Десерты</li>
+						<li class="list-group-item secondary spacial-submenu">Напитки</li>
+					</ul>
+				</div>
+
+				<span class="menu-button menu-button-left">&nbsp</span>
+				<div class="menu-card_event row col-sm-9"></div>
+				<span class="menu-button menu-button-right">&nbsp</span>
+
+				<div class="table col-sm-3" id="table">
+					<h1>Расчёт заказа</h1>
+					<div>Выберете дату:<input type="date"></div>	
+					<div>Выберете время:<input type="time"></div>
+					<div>Количество гостей:<select>
+						<option selected value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select></div>
+					<div><img src="img/table.png" alt=""></div>
+					<div>К оплате:<span></span></div>
+					<button class="btn btn-primary reserve-button">Бронировать</button>
+				</div>			
+			</div> -->
+		</div>
+
+		<!-- Модальное окно подтверждения бронирования -->
+		<div class="modal modal-dialog-centered reserve-window" tabindex="-1" role="dialog" data-backdrop="true"
+		data-keyboard="true">
+		<div class="modal-dialog">
+			<div class="modal-content reserve-window-content">
+				<div class="modal-header">
+					<button type="button" class="close close-reserve-window" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div>
+						<div>
+							<p>Полное имя</p>
+							<input type="text">
+						</div>
+						<div>
+							<p>Номер телефона</p>
+							<input type="tel">
+						</div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+							<label class="custom-control-label" for="customCheck1" value="true">согласие на обработку персональных данных</label>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary button-reserve-confirm">Отправить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal-dialog-centered reserve-window-alert" tabindex="-1" role="dialog" data-backdrop="true"
+	data-keyboard="true">
+	<div class="modal-dialog">
+		<div class="modal-content reserve-window-content">
+			<div class="modal-header">
+				<button type="button" class="close close-reserve-window" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div>
+					<p>Спасибо! Наш администратор свяжется с вами.</p>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary button-reserve-confirm-ok">
+					OK
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal-dialog-centered warning" tabindex="-1" role="dialog" data-backdrop="true"
+data-keyboard="true">
+<div class="modal-dialog">
+	<div class="modal-content reserve-window-content">
+		<div class="modal-header">
+			<button type="button" class="close close-reserve-window" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+			<div>
+				<p>Заполните все поля</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-primary warning-ok">
+				OK
+			</button>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+<!-- <div class="about section" id="lunch">
+	<div class="about-text"><h2>Ланч</h2>
+	</div>	
+</div> -->
+	<div class="container-fluid" id="menu">
+		<div class="row menu ">
+			<span class="menu-items-button-left mr-auto">&nbsp</span>
+			<div class="col-3 menu-items">
+				<ul class="list-group">
+				  <li class="list-group-item primary main-menu">Основное меню</li>
+					  <li class="list-group-item secondary main-submenu" data-target="coldDishes">Холодные закуски</li>
+					  <li class="list-group-item secondary main-submenu" data-target="salad">Салаты</li>
+					  <li class="list-group-item secondary main-submenu" data-target="hotDishes">Горячие закуски</li>
+					  <li class="list-group-item secondary main-submenu" data-target="firstMeal">Первые блюда</li>
+					  <li class="list-group-item secondary main-submenu" data-target="mainMeal">Горячие блюда</li>
+					  <li class="list-group-item secondary main-submenu" data-target="bbqDishes">Блюда на мангале</li>
+					  <li class="list-group-item secondary main-submenu" data-target="bigCompanyDishes">Блюда для большой компании</li>
+					  <li class="list-group-item secondary main-submenu" data-target="paste">Паста</li>
+					  <li class="list-group-item secondary main-submenu" data-target="sideDishes">Гарнир</li>
+					  <li class="list-group-item secondary main-submenu" data-target="pizza">Пицца</li>
+					  <li class="list-group-item secondary main-submenu" data-target="khachapuri">Хачапури</li>
+					  <li class="list-group-item secondary main-submenu" data-target="pies">Осетинские пироги</li>
+					  <li class="list-group-item secondary main-submenu" data-target="pancakes">Блины</li>
+					  <li class="list-group-item secondary main-submenu" data-target="burger">Бургеры</li>
+					  <li class="list-group-item secondary main-submenu" data-target="beerDishes">Закуски к пиву</li>
+					  <li class="list-group-item secondary main-submenu" data-target="sauces">Соусы</li>
+					  <li class="list-group-item secondary main-submenu" data-target="bread">Хлеб</li>
+					  <li class="list-group-item secondary main-submenu" data-target="desert">Десерты</li>
+
+				  <li class="list-group-item primary bar-menu">Барное меню</li>
+				  	<li class="list-group-item secondary bar-submenu">Шоты</li>
+				  	<li class="list-group-item secondary bar-submenu">Апперетив</li>
+				  	<li class="list-group-item secondary bar-submenu">Коктейли</li>
+				  	<li class="list-group-item secondary bar-submenu">Вино белое</li>
+				  	<li class="list-group-item secondary bar-submenu">Вино розовое</li>
+				  	<li class="list-group-item secondary bar-submenu">Вино красное</li>
+				  	<li class="list-group-item secondary bar-submenu">Вино игристое</li>
+				  	<li class="list-group-item secondary bar-submenu">Крепкий алкоголь</li>
+				  	<li class="list-group-item secondary bar-submenu">Пиво бутылочное</li>
+				  	<li class="list-group-item secondary bar-submenu">Пиво разливное</li>
+				  	<li class="list-group-item secondary bar-submenu">Напитки</li>
+				  	<li class="list-group-item secondary bar-submenu">Чай и кофе</li>
+				  	<li class="list-group-item secondary bar-submenu">Курительные наборы</li>
+
+				  <li class="list-group-item primary hookah-menu">Кальянная карта</li>
+				  	<li class="list-group-item secondary hookah-submenu">Кальяны</li>
+				  	<li class="list-group-item secondary hookah-submenu">Фрутовые чаши</li>
+				  	<li class="list-group-item secondary hookah-submenu">Добавки в колбу</li>
+
+				  <li class="list-group-item primary banquet-menu">Банкетное меню</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bColdDishes">Холодные закуски</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bsalad">Салаты</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bhotDishes">Горячие закуски</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bmainMeals">Горячие блюда</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bpaste">Паста</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bsideDishes">Гарнир</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bpizza">Пицца</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bkhachapuri">Хачапури</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bpies">Осетинские пироги</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bpancakes">Блины</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bburger">Закуски к пиву</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bbeerDishes">Блины</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bsauces">Соусы</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bbread">Хлеб</li>
+				  	<li class="list-group-item secondary banquet-submenu" data-target="bdesert">Десерты</li>
+				  	
+				  <li class="list-group-item primary special-menu">Поминальное меню</li>
+				  	<li class="list-group-item secondary special-submenu" data-target="sfirstMeal">Первые блюда</li>
+				  	<li class="list-group-item secondary special-submenu" data-target="traditional">Традиционная трапеза</li>
+				  	<li class="list-group-item secondary special-submenu" data-target="spancakes">Блины</li>
+				  	<li class="list-group-item secondary special-submenu" data-target="scoldDishes">Холодные закуски</li>
+				  	<li class="list-group-item secondary special-submenu" data-target="ssalad">Салаты</li>
+				  	<li class="list-group-item secondary special-submenu" data-target="shotDishes">Горячие закуски</li>
+				  	<li class="list-group-item secondary special-submenu" data-target="skhachapuri">Хачапури</li>
+				  	<li class="list-group-item secondary special-submenu" data-target="spies">Осетинские пироги</li>
+				  	<li class="list-group-item secondary special-submenu" data-target="smainMeal">Горячее к гарниру</li>
+				  	<li class="list-group-item secondary special-submenu" data-target="ssideDishes">Гарнир</li>
+				  	<li class="list-group-item secondary special-submenu" data-target="sdesert">Десерты</li>
+				  	<li class="list-group-item secondary spacial-submenu" data-target="spdrinks">Напитки</li>
+				</ul>
+			</div>
+			<span class="menu-items-button-right ml-auto">&nbsp</span>
+
+			<span class="menu-button menu-button-left">&nbsp</span>
+			<div class="menu-card row col-9"></div>
+			<span class="menu-button menu-button-right">&nbsp</span>
+
+			<div class="table col-sm-3" id="table">
+				<h1>Расчёт заказа</h1>
+				<div>Выберете дату:<input type="date"></div>	
+				<div>Выберете время:<input type="time"></div>
+				<div>Количество гостей:<select>
+					<option selected value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select></div>
+				<div><img src="img/table.png" alt=""></div>
+				<div >К оплате:<span></span>руб</div>
+				<button class="btn btn-primary reserve-button">Бронировать</button>
+			</div>	
+					<div class="lunch" id="lunch">
+				<div class="row container-fluid">
+					<div class="col col-12 col-lg-4 lunch-left-col">
+						<h2>Бизнес-ланч</h2>
+						<p class="lunch-time"><span>В будние дни с 12:00 до 16:00<br/></span>
+						&mdash; предлагаем Вам вкусные и сытные комплексные обеда. Большой выбор блюд и уютная атмосфера позволяет
+						провести обеденный перерыв с комфортом</p>
+						<div>
+							<h4>Комбо 1</h4>
+							<p>суп <img src="img/icons/point.png" alt=""> салат = <span>250&#8381;</span></p>
+						</div>
+						<div>
+							<h4>Комбо 2</h4>
+							<p>горячее <img src="img/icons/point.png" alt=""> салат = <span>250&#8381;</span></p>
+						</div>
+						<div>
+							<h4>Комбо 3</h4>
+							<p>суп <img src="img/icons/point.png" alt=""> горячее <img src="img/icons/point.png" alt=""> салат = <span>300&#8381;</span></p>
+						</div>
+						<div>
+							<h4>Комбо 4</h4>
+							<p>суп <img src="img/icons/point.png" alt=""> горячее <img src="img/icons/point.png" alt=""> салат <img src="img/icons/point.png" alt=""> напиток = <span>250&#8381;</span></p>
+						</div>
+						<div>
+							<h4>Пицца-ланч</h4>
+							<p>1 кусок = <span>120р</span> <img src="img/icons/point.png" alt=""> 2 куска = <span>200&#8381;
+							</span></p>
+						</div>
+
+					</div>
+					<div class="col col-sm-6 col-lg-4 lunch-center-col">
+						<div>
+							<img class="lunch-photo" src="./img/lunch/sup-lapsha.png" alt="">
+							<p>
+								<span class="lunch-button-left"><img src="img/icons/back.png" alt=""></span>
+								<span class="lunch-button-right"><img src="img/icons/forward.png" alt=""></span>
+							</p>
+						</div>
+					</div>
+					<div class="col col-sm-6 col-lg-4 lunch-right-col">
+				
+						<div class="lunch-dishes">
+							
+						</div>
+						<div class="lunch-icons mt-auto">
+							<div>
+								<img src="./img/icons/salad-icon-white.png" alt="">
+								<img src="./img/icons/salad-icon-orange.png" alt="">
+								<img src="./img/icons/salad-icon-white.png" alt="">	
+							</div>
+							<div>
+								<img src="./img/icons/salad-icon-white.png" alt="">
+								<img src="./img/icons/salad-icon-orange.png" alt="">
+								<img src="./img/icons/salad-icon-white.png" alt="">
+								<img src="./img/icons/salad-icon-orange.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</div>
+	</div>
+
+<!-- <div class="about section" id="events">
+	<div class="about-text"><h2>Мероприятия</h2>
+	</div>	
+</div> -->
+
+<!-- <div class="about section" id="photo">
+	<div class="about-text"><h2>ФОТО</h2>
+	</div>	
+</div>
+-->
+<!-- <div class="about section" id="karaoke">
+	<div class="about-text"><h2>Караоке</h2>
+	</div>	
+</div> -->
+
+<!-- <div class="about section" id="hookah">
+	<div class="about-text"><h2>Кальян</h2>
+	</div>	
+</div> -->
+
+<!-- <div class="about section" id="sport-translations">
+	<div class="about-text"><h2>Трансляции</h2>
+	</div>	
+</div>
+-->
+<section class="event" id="events">
+	<div class="container py-5">
+		<div >
+			<canvas class="activity" width="300px" height="63px" data-context="Мероприятия"></canvas>
+		</div>
+		
+		<p>Наш многолетний опыт позволяет организовать и провести на высоком уровне различные мероприятия. Просто расскажите нам, какой результат Вы хотите получить. Коллектив кафе-бара “Старый Город” сделает Ваш праздник незабываевым. Заботливо сопровождаем Вас от первого звонка до реализации мероприятия.  </p>
+		<div class="row  row-cols-3 row-cols-md-2 ">
+			<div class="col-12 col-md-6 col-lg-4  my-2 col_event">
+				<div class="card text-center h-100 py-4 px-3" >
+					<img class="img-fluid m-auto" src="./img/icons/event_icon1.png" alt="мероприятий">
+					<div class="card-body d-flex flex-column">
+						<canvas class="first" width="272px" height="50px" data-context="Проведение мероприятий"></canvas>
+						<p class="card-text mb-auto"> Дни Рождения, Детские праздники,  Свадьбы, Юбилеи, Корпоративы...  </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 my-2 col_event">
+				<div class="card text-center h-100 py-4 px-3 " >
+					<img class="img-fluid m-auto" src="./img/icons/event_icon2.png" alt="цены">
+					<div class="card-body d-flex flex-column">
+						<canvas class="event_item img-fluid" width="272px" height="50px" data-context="Приемлемые цены"></canvas>
+						<p class="card-text">Оптимальное соотношение цены и качества </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 my-2 col_event">
+				<div class="card text-center h-100 py-4 px-3" >
+					<img class="img-fluid m-auto" src="./img/icons/event_icon3.png" alt="Вместительность">
+					<div class="card-body d-flex flex-column">
+						<canvas  class="event_item img-fluid" width="272px" height="50px" data-context="Вместительность зала"></canvas>
+						<p class="card-text">До 60 гостей<br> Зал + барная зона </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 my-2 col_event">
+				<div class="card text-center h-100 py-4 px-3" >
+					<img class="img-fluid m-auto" src="./img/icons/event_icon4.png" alt="караоке">
+					<div class="card-body d-flex flex-column">
+						<canvas  class="event_item img-fluid" width="272px" height="50px" data-context="Бесплатное караоке"></canvas>
+						<p class="card-text">Во время торжества гости могут исполнить свои любимые песни</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 my-2 col_event">
+				<div class="card text-center h-100 py-4 px-3" >
+					<img class="img-fluid m-auto" src="./img/icons/event_icon5.png" alt="Алкоголь">
+					<div class="card-body d-flex flex-column">
+						<canvas  class="event_item img-fluid" width="272px" height="50px" data-context="Алкоголь с собой"></canvas>
+						<p class="card-text">У нас замечательный бар, но при желании вы можете принести свои алкогольные напитки </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 my-2 col_event">
+				<div class="card text-center h-100 py-4 px-3" src="./img/icons/event_icon6.png" alt="паркинг">
+					<img class="img-fluid m-auto" src="./img/icons/event_icon6.png" alt="Алкоголь">
+					<div class="card-body d-flex flex-column">
+						<canvas  class="last" width="272px" height="50px" data-context="Удобный паркинг"></canvas>
+						<p class="card-text">Рядом с кафе-баром находится парковка для гостей</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row row-cols-1 ">
+			<div class="col col-md-12 about_us">
+				<canvas  width="100px" height="32px" data-context="Почему мы?"></canvas>
+
+				<ul>
+					<li>Доброжелательный и приветливый персонал организует ваш праздник так, как вы только можете пожелать. </li>
+					<li>Уютная атмосфера заведения в сочетании с изобилием угощений и благородных напитков не оставит равнодушным ни одного из гостей. У нас в меню вы найдёте вкусные и изысканные блюда Русской, Европейской и Кавказкой кухни.  Наши повара рады готовить для вас!
+					</li>
+					<li>Высококачественная техника и интерьер дополнят ваше мероприятие: плазменные HD телевизоры, проектор, объёмный звук, индивидуальные дизайнерские оформления банкетов, профессиональные ведущие и аниматоры.</li>
+					<li>Можно заказать праздничный торт,  наши кондитеры с радостью испекут его для Вас.</li>
+					<li>Возможно закрытие заведения под Ваше мероприятие.</li>
+				</ul>
+				<canvas  width="100px" height="32px" data-context="Банкеты:"></canvas>
+				<ul>
+					<li>Банкетное меню.</li>
+					<li>Депозит 2000₽/гость + 10% за обслуживание.</li>
+					<li>Пробковый сбор 250₽/бутылка.</li>
+					<li>Аренда зала 15 000₽ .</li>
+					<li>Аренда барной зоны 10 000₽.</li>
+				</ul>
+				<canvas  width="100px" height="32px" data-context="Поминки:"></canvas>
+				<ul>
+					<li>Поминальное меню.</li>
+					<li>Депозит 1 200₽/гость + 10% за обслуживание.</li>
+					<li>Пробковый сбор 250₽/бутылка.</li>
+					<li>Аренда зала 15 000₽. 	</li>
+					<li>Аренда барной зоны 10 000₽.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<div id="photo" class="py-5"></div>
+<section class="gallery" >
+	<img class="background_gallery img-fluid" src="./img/background/gallery_back.png" alt="фон">
+	<div class="container-md no-gutters p-0 m-md-auto m-0">
+		<div class="d-flex justify-content-around">
+			<div>
+				<div class="gallery_contaier_p">
+					<p>Галерея</p>
+				</div>
+
+			</div>
+			<div class="d-flex gallery_container justify-content-start justify-content-md-end flex-column flex-md-row justify-content-around justify-content-md-end">
+				<img class="m-1 img-fluid"src="/img/gallery/img_01.png" class="card-img-top" alt="...">
+				<img class="m-1 img-fluid"src="/img/gallery/img_02.png" class="card-img-top" alt="...">
+				<img class="m-1 img-fluid"src="/img/gallery/img_03.	png" class="card-img-top" alt="фото">
+				<img class="m-1 img-fluid"src="/img/gallery/img_04.png" class="card-img-top" alt="фото">
+				<img class="m-1 img-fluid"src="/img/gallery/img_05.png" class="card-img-top" alt="фото">
+				<img class="m-1 img-fluid"src="/img/gallery/img_06.png" class="card-img-top" alt="фото">
+				<img class="m-1 img-fluid"src="/img/gallery/img_07.png" class="card-img-top" alt="фото">
+				<img class="m-1 img-fluid"src="/img/gallery/img_08.png" class="card-img-top" alt="фото">
+				<img class="m-1 img-fluid"src="/img/gallery/img_09.png" class="card-img-top" alt="фото">
+			</div>
+		</div>
+	</div>
+</section>
+------------
+<section class="old_city mt-3 pb-5" >
+	
+	<div class="container pb-0 pb-md-5">
+		<div class="row">
+			<div class="col-12 col-md-6 text-center mb-5">
+			<canvas class="karaoke img-fluid old_city_h2_back canvas_01 " width="510px" height="209px" data-context="Караоке"></canvas>
+			</div>
+		</div>
+		<div class="row row-cols-2 row-cols-sm-1 text-white pb-md-5 " id="karaoke">
+
+			<div class="col-9 d-block d-md-flex col-md-6  m-auto " >
+
+				<img class="img-fluid" src="./img/background/frame150.png" alt="Кальян">
+			</div>
+			<div class="col-12 col-md-6 pt-0 ">
+<!-- 			  	---------
+			  	Делал canvas
+			  	---------
+			  	<div class="canvas">
+				  	<canvas class="old_city_h1" width="400px" height="120px" data-context="Караоке">
+				  	</canvas>
+				  	<canvas class="old_city_h2" width="245px" height="40px" data-context="БЕСПЛАТНО">
+				  	</canvas>
+			  	</div>
+			  	---------
+			  	Делал canvas
+			  	--------- -->
+			  	<img class="mt-0 img-fluid" src="./img/background/old_city.png" alt="Заголовок">
+
+
+			  	<div class="btn-group d-flex d-sm-block flex-column flex-sm-row" role="group" aria-label="Basic example">
+			  		<button type="button" class="btn btn-md mb-2 mr-2 bg-transparent"> Караоке система AST-50</button>
+			  		<button type="button" class="btn btn-md mb-2 mr-2 bg-transparent">Экран проектора + 3TV </button>
+			  	</div>
+			  	<div class="btn-group d-flex d-sm-block flex-column flex-sm-row mb-3" role="group" aria-label="Basic example">
+			  		<button type="button" class="btn btn-md mb-2 mr-2 bg-transparent">Микрофоны shure sh-200</button>
+			  		<button type="button" class="btn btn-md mb-2 mr-2 bg-transparent">Колонки Soundking</button>
+			  	</div>
+
+
+			  	<p class="old_city_text">В караоке кафе-бара “Старый Город” вы сможете провести незабываемые музыкальные вечера. Уютная обстановка и комфортный звук позволят Вам расслабиться на праздничном банкете или в компании друзей. Тут вы почувствуете себя настоящей звездой!  </p>
+			  </div>
+			</div>
+			<div class="row d-none d-md-block">
+				<!-- <div class="col-12 col-sm-12">
+					<h2 class="old_city_h2_back">Старый Город</h2>
+				</div> -->
+				<canvas class="old_city_h2_back canvas_01 img-fluid" width="900px" height="165px" data-context="Старый Город"></canvas>
+			</div>
+			<div class="row  row-cols-sm-1 text-white pb-5" id="hookah">
+				<div class="col-12 col-md-6">
+		<!--	  	------
+ 			  	делал canvas
+			  	------
+			  	<canvas class="old_city_h1 mt-5"width="400px" height="120px" data-context="Караоке"></canvas>
+			  	<canvas class="old_city_h2" width="245px" height="70px" data-context="БЕСПЛАТНО"></canvas>
+			  	-------
+			  	делал canvas
+			  	------- -->
+			  	<img class="img-fluid" src="./img/background/old_city_2.png"  alt="Заголовок">
+			  	<div class="btn-group d-flex d-sm-block flex-column flex-sm-row" role="group" aria-label="Basic example">
+			  		<button type="button" class="btn btn-md mb-2 mr-2 bg-transparent">качественные  Кальяны</button>
+			  		<button type="button" class="btn btn-md mb-2 mr-2 bg-transparent">волшебный  вкус</button>
+
+			  	</div>
+			  	<div class="btn-group d-flex d-sm-block flex-column flex-sm-row mb-3" role="group" aria-label="Basic example">
+			  		<button type="button" class="btn btn-md mb-2 mr-2 bg-transparent">лучшие  угли </button>
+			  		<button type="button" class="btn btn-md mb-2 mr-2 bg-transparent">обстановка   по - кайфу</button>
+			  	</div>
+			  	<p class="old_city_text mb-5">Кафе-бар "Старый город" предлагает лучший сервис и расслабляющую обстановку! Вы не останетесь равнодушными, попробовав разнообразие вкусов табака. 
+			  	</p>
+			  </div>
+			  <div class="col-9 d-block d-md-flex col-md-6  m-auto pt-5 order-first order-md-last">
+			  	<img class="img-fluid"  src="./img/background/frame151.png" alt="Кальян">
+			  </div>
+			</div>
+			<div class="row d-none d-md-block">
+				<canvas class="old_city_h2_back canvas_02 img-fluid" width="450px" height="165px" data-context="Кальян"></canvas>
+			</div>
+		</section>
+		<section class="broadcast not_style mt-5 " id="sport-translations">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 py-5">
+						<h2 class="card-title">Спортивные трансляции</h2>
+						<p class="card-text">болеем с вами</p>
+						<p class="card-text">Кафе-бар “Старый Город” проводит трансляции лучших спортивных событий. Дружная сплочённая атмосфера позволит вам расслабиться за кружкой пива и разделить любовь к спортсменам.</p> 
+						<p class="card-text">Да здравствует любовь к спорту! Поддержи своих фаворитов.</p>
+						<ul class="list-inline list-unstyled">
+							<li class="list-inline-item"><img src="./img/icons/khl.png" alt="кхл"></li>
+							<li class="list-inline-item"><img src="./img/icons/unname1.png" alt=""></li>
+							<li class="list-inline-item"><img src="./img/icons/ufc.png" alt="уфц"></li>
+							<li class="list-inline-item"><img src="./img/icons/champions-league1.png" alt=""></li>
+							<li class="list-inline-item"><img src="./img/icons/f1.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="contact not_style">
+			<div class="container">
+						<div class="row">
+						<div class="col-12 text-center">
+							<h3>Контакты</h3>
+						</div>
+						</div>
+				<div class="row row-cols-3 row-cols-md-2  row-col-lg-1">
+					<!-- <div class="col-12 d-flex justify-content-around text-center"> -->
+
+
+
+						<div class="card text-center text-center not_style border-0 col-sm-6 col-12  col-lg-3">
+							<div class="card-body p-4">
+								<img class="img-fuid float-none float-sm-left mb-4 mb-md-auto" src="./img/icons/phone.png" alt="номер телефона">
+								<h5 class="card-title">Телефон</h5>
+								<p class="card-text">+7 (495) 517-22-09</p>
+							</div>
+						</div>
+						<div class="card text-center text-center not_style border-0 col-sm-6 col-12 col-lg-3">
+							<div class="card-body p-4">
+								<img class="img-fuid float-none float-sm-left mb-4 mb-md-auto
+								" src="./img/icons/arrow.png" alt="Адрес">
+								<h5 class="card-title">Адрес</h5>
+								<p class="card-text">МО, г. Реутов, <br>
+								ул. Гагарина, дом. 42/10</p>
+							</div>
+						</div>
+						<div class="card text-center text-center not_style border-0 col-sm-6 col-12 col-lg-3">
+							<div class="card-body p-4">
+								<img class="img-fuid float-none float-sm-left mb-4 mb-md-auto" src="./img/icons/email.png" alt="Адрес">
+								<h5 class="card-title">Почта</h5>
+								<p class="card-text">sg-cafe@yandex.ru</p>
+							</div>
+						</div>
+						<div class="card text-center text-center not_style border-0 col-12 col-sm-6 col-lg-3">
+							<div class="card-body p-4">
+								<img class="img-fuid float-none float-sm-left mb-4 mb-md-auto" src="./img/icons/clock.png" alt="Адрес">
+								<h5 class="card-title">Режим работы</h5>
+								<p class="card-text">11:00 - 01:00</p>
+							</div>
+						</div>
+						<!-- </div> -->
+					</div>
+					<div class="row row-cols-1">
+						<div class="col-12">
+							<h3 class="tex-center">Бесплатная парковка для гостей</h3>
+
+
+							<div class="contact_btn btn-group d-flex d-sm-block flex-column flex-sm-row text-center" role="group" aria-label="Basic example">
+								<button type="button" class="btn btn-sm mb-2 ">Написать нам</button>
+								<button type="button" class="btn mb-2 btn-sm">Заказать звонок</button>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<section class="map_yandex">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 text-center">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A19fdad78058491e78348a8a085329162ed8209b02608ef055e81bc8fbddefd8a&amp;source=constructor"  height="477" frameborder="0"></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<footer class="py-5">
+				<div class="container">
+					<div class="row row-cols-3 row-cols-sm-2 row-cols-sm-1">
+						<div class="col-12 col-sm-12 col-md-6">
+							<h3>Наши проекты</h3>
+
+							<ul class="list-inline">
+								<li class="list-inline-item"><img src="./img/icons/img_01.png" alt="Еда"></li>
+								<li class="list-inline-item"><img src="./img/icons/img_02.png" alt="Француз"></li>
+								<li class="list-inline-item"><img src="./img/icons/img_03.png" alt="Zima leto"></li>
+								<li class="list-inline-item"><img src="./img/icons/img_04.png" alt="Хлеб совет"></li>
+								<li class="list-inline-item"><img src="./img/icons/img_05.png" alt="Comicadze"></li>
+								<li class="list-inline-item"><img src="./img/icons/img_06.png" alt="Wetop"></li>
+								<li class="list-inline-item"><img src="./img/icons/img_07.png" alt="Рейтинг"></li>
+								<li class="list-inline-item"><img src="./img/icons/img_08.png" alt="Пою всегда"></li>
+							</ul>
+							<p>
+								<a href="">Сотрудничество</a>
+							</p>
+							<p><a href="">Политика конфиденциальности</a></p>
+
+
+
+
+							<ul class="list-inline list-unstyled text-sm-center text-md-left">
+								<li class="list-inline-item"><img src="./img/icons/logos_maestro.png" alt="maestro"></li>
+								<li class="list-inline-item"><img src="./img/icons/logos_mastercard_event.png" alt="maestro"></li>
+
+
+								<li class="list-inline-item"><img src="./img/icons/visa.png" alt="visa"></li>
+								<li class="list-inline-item"><img src="./img/icons//mir.png" alt="мир"></li>
+								<li class="list-inline-item"><img src="./img/icons//jcb.png" alt="jsb"></li>
+
+							</ul>
+
+						</div>
+
+
+
+						<div class="col-12 col-md-3 text-center">
+							<h3>Контакты</h3>
+							<ul class="list-unstyled lis">
+								<li> <a href="tel:+7 495 517-22-09">+7 (495) 517-22-09</a></li>
+
+								<li><a href="tel:+7 (968) 091-55-51">+7 (968) 091-55-51</a></li>
+								<li><a href="tel:+7 (968) 091-55-52">+7 (968) 091-55-52</a></li>
+								<li><a href="tel:+7 (968) 091-55-53">+7 (968) 091-55-53</a></li>
+								<li><a href="mailto:sg-cafe@yandex.ru">sg-cafe@yandex.ru</a></li>
+								<li>МО, г. Реутов <br>
+								ул. Гагарина 42/10</li>
+							</ul>
+
+						</div>
+						<div class="col-12 col-md-3  text-center text-md-left">
+							<h3>Информация</h3>
+							<ul class=" list-unstyled ">
+								<li>ОГРН: 5177746201221</li>
+								<li>ИНН: 7720402524</li>
+								<li>Не является публичной офертой</li>
+								<li>ООО «БКФ»</li>
+								<li>Режим работы: <br>с 11:00 до 01:00,без выходных</li>
+							</ul>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+
+		</footer>
+
+	</div>
+</body>
+</html>
