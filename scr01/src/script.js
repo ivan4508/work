@@ -39,6 +39,36 @@ $(document).ready(function() {
 			$(".navbar-toggler").removeClass("active");
 	});
 
+	$(".slide-one img").click(function(){
+		if($(window).width()>992){
+			$(".popup-one").fadeIn(1000);
+			$(".popup-one").css("display","flex");
+		}
+	});
+	$(".popup-one").click(function(){
+		$(".popup-one").fadeOut(200);
+	})
+
+	$(".slide-two img").click(function(){
+		if($(window).width()>992){
+			$(".popup-two").fadeIn(1000);
+			$(".popup-two").css("display","flex");
+		}
+	});
+	$(".popup-two").click(function(){
+		$(".popup-two").fadeOut(200);
+	})
+
+	$(".slide-three img").click(function(){
+		if($(window).width()>992){
+			$(".popup-three").fadeIn(1000);
+			$(".popup-three").css("display","flex");
+		}
+	});
+	$(".popup-three").click(function(){
+		$(".popup-three").fadeOut(200);
+	})
+
 	let menuCardVisible = {
 		count: 10,
 		counter: 10,
@@ -270,8 +300,8 @@ function renderMenuCards(menuSecondarySection){
 					  <div class="card-body">
 					    <h5 class="card-title">`+menu.main[menuSecondarySection][i].name+`</h5>
 					    <p class="card-text">
-					    `+menu.main[menuSecondarySection][i].price+`&#8381;/<span>`+menu.main[menuSecondarySection][i].weight+`
-					    </span></p>
+					    `+menu.main[menuSecondarySection][i].weight+`/<span>`+menu.main[menuSecondarySection][i].price+`
+					    &#8381;</span></p>
 					    <div class="card-button badge badge-pill">
 						    <button class="card-button-left"><span>-</span></button>
 						    <span class="card-counter">`+count+`</span>
@@ -300,7 +330,7 @@ function renderCart(){
 						  <div class="card-body">
 						    <h5 class="card-title">`+menu.getById(cart[i].id).name+`</h5>
 						    <p class="card-text">
-						    `+menu.getById(cart[i].id).price+`&#8381;/<span>`+menu.getById(cart[i].id).weight+`<span></p>
+						    `+menu.getById(cart[i].id).weight+`/<span>`+menu.getById(cart[i].id).price+`&#8381;<span></p>
 						    <div class="card-button badge badge-pill">
 							    <button class="card-button-left"><span>-</span></button>
 							    <span class="card-counter">`+cart[i].count+`</span>
@@ -475,7 +505,7 @@ function renderCart(){
 
 			function appendLunchDishes(lunchSection){
 				for(let i=0; i<dataLunch[lunchSection].length;i++){
-					if(i < 1) {
+					if(i == 0) {
 						$(".lunch-dishes").append(`<p class="activeDish">`+ dataLunch[lunchSection][i]+`</p>`);
 					} else {
 						$(".lunch-dishes").append(`<p>`+ dataLunch[lunchSection][i]+`</p>`);
@@ -496,7 +526,7 @@ function renderCart(){
 		renderLunchMenu(dataLunch.menuSection[lunchMenuPosition]);
 	});
 
-	renderLunchMenu("salad");
+	renderLunchMenu();
 
 	$(".lunch-dishes").click(function(e){
 		$(".activeDish").removeClass("activeDish");
@@ -511,14 +541,14 @@ function renderCart(){
 		mobVerMenuCardCounter--;
 		if(mobVerMenuCardCounter < 0) mobVerMenuCardCounter = 4;
 		$(".primary").css("display","none");
-		$(".secondary").fadeOut(1);
+		/*$(".secondary").fadeOut(1);*/
 		$(".primary").eq(mobVerMenuCardCounter).css("display","block")
 	});
 	$(".menu-items-button-right").click(function () {
 		mobVerMenuCardCounter++;
 		if(mobVerMenuCardCounter > 4) mobVerMenuCardCounter = 0;
 		$(".primary").css("display","none");
-		$(".secondary").fadeOut(1);
+		/*$(".secondary").fadeOut(1);*/
 		$(".primary").eq(mobVerMenuCardCounter).css("display","block")
 	});	
 
@@ -550,7 +580,7 @@ function renderCart(){
 					  <div class="card-body">
 					    <h5 class="card-title">`+arrayOfItems[countOfItems].name+`</h5>
 					    <p class="card-text">
-					    `+arrayOfItems[countOfItems].price+`&#8381;/<span>`+arrayOfItems[countOfItems].weight+`
+					    `+arrayOfItems[countOfItems].weight+`/<span>`+arrayOfItems[countOfItems].price+`&#8381
 					    </span></p>
 					  </div>
 					  </div>

@@ -86,7 +86,7 @@ $(this).on('mouseleave',function () {
 	},200)
 })
 }
-$(".swiper img").each(swiperSlide);
+$(".swiper div").each(swiperSlide);
 $('.nav a').on('click', function (e) {
         e.preventDefault();
         $('.nav a').removeClass('active').filter(this).addClass('active');

@@ -15,6 +15,7 @@
 
 	<script type="text/javascript" src="src/script.js"></script>
 	<script type="text/javascript" src="src/data.js"></script>
+	<script type="text/javascript" src="src/data-lunch.js"></script>
 	<script type="text/javascript" src="./src/main.js"></script>
 	<!-- <link rel="stylesheet" type="text/css" href="style/style.css"> -->
 	<link rel="stylesheet" type="text/css" href="./style/styles.css?v=1">
@@ -87,17 +88,16 @@
 		</nav>
 	</div>
 
-		<a class="cart-button" href="#menu"></a>
-
-		<div class="about section container-fluid" id="about01" style="
-		">
-		<div class="row">
-			<div class="col-lg-5 about-text">
+	<a class="cart-button" href="#menu"></a>
+		<!-- About -->
+ 	 <div class="about section container-fluid" id="about">
+		<div class="row container-fluid">
+			<div class="col-lg-5 col-md-4 col-sm-12 about-text">
 				<div>
-					<h1>Старый Город</h1>
-					<h2>кафе-бар</h2>
-					<span>Мы рады видеть вас среди своих гостей! Готовы вам предложить уютную атмосферу и разнообразную кухню. К вашим услугам бар, караоке, кальян и трансляции лучших спортивных мероприятий. Работаем для вас с 2012. Подходящее кафе для любой встречи - все останутся довольны!  
-					</span>
+				<h1>Старый Город</h1>
+				<h2>кафе-бар</h2>
+				<span>Мы рады видеть вас среди своих гостей! Готовы вам предложить уютную атмосферу и разнообразную кухню. К вашим услугам бар, караоке, кальян и трансляции лучших спортивных мероприятий. Работаем для вас с 2012. Подходящее кафе для любой встречи - все останутся довольны!  
+				</span>
 				</div>
 				<div class="socials">
 					<a href="https://vk.com/sg.cafebar"><img src="img/socials/vk.png"></a>
@@ -105,223 +105,41 @@
 					<a href="https://www.facebook.com/sg.cafebar"><img src="img/socials/fb.png"></a>
 				</div>
 				<button class="btn">Хочу узнать больше!</button>
-			</div>
+			</div> 
 
-			<div class="col-lg-7 col-md-12 swiper text-center">
-				<div class="m-3"><img class="img-fluid " src="img/banners/lunch.png"></div>
-				<div class="m-3"><img class="img-fluid" src="img/banners/tort.png"></div>
-				<div class="m-3"><img class="img-fluid " src="img/banners/banquet.png"></div>
-			</div>	 
-		</div>
+		 	 <div class="col-lg-7 col-md-8 col-sm-12 swiper">
+				<div class="swiper-slide slide-one"><img src="img/banners/lunch.png"></a></div>
+				<div class="swiper-slide slide-two"><img src="img/banners/tort.png"></div>
+				<div class="swiper-slide slide-three"><img src="img/banners/banquet.png"></div>
+			</div> 
+  		</div>
+	</div> 
+
+  	<div class="popup-one modal"> 
+		<div class="popup-one-img"><img src="img/banners/lunch.png" alt=""></div>
+	</div>
+	<div class="popup-two modal">
+		<div class="popup-two-img"><img src="img/banners/tort.png" alt=""></div>
+	</div>
+	<div class="popup-three modal">
+		<div class="popup-three-img"><img src="img/banners/banquet.png" alt=""></div>
 	</div>
 
-	<div class="menu-order container my-5">
+ 	<div class="menu-order container-fluid">
 		<h5>Рассчитаем стоимость заказа за 4 шага</h5>
-			<div class="row row-cols-3 row-cols-md-2 row-cols-lg-1">
-				<div class="col-12 col-md-6 col-lg-3 text-center">
-					<img class="img-fluid" src="./img/menu-order/select-item.png"></div>
-				<div class="col-12 col-md-6 col-lg-3 text-center">
-					<img class="img-fluid text-center" src="./img/menu-order/add-item.png"></div>
-				<div class="col-12 col-md-6 col-lg-3 text-center">
-					<img class="img-fluid" src="./img/menu-order/goto-order.png"></div>
-				<div class="col-12 col-md-6 col-lg-3 text-center">
-					<img class="img-fluid" clas src="./img/menu-order/select-date.png">
-				</div>
-				</div>
-			</div>
-
-					<div class="container-fluid" id="menu">
-			<!-- <div class="row menu ">
-				<div class="col-sm-2 menu-items">
-					<ul class="list-group">
-						<li class="list-group-item primary main-menu">Основное меню</li>
-						<li class="list-group-item secondary main-submenu" data-target="coldDishes">Холодные закуски</li>
-						<li class="list-group-item secondary main-submenu" data-target="salad">Салаты</li>
-						<li class="list-group-item secondary main-submenu" data-target="hotDishes">Горячие закуски</li>
-						<li class="list-group-item secondary main-submenu" data-target="firstMeal">Первые блюда</li>
-						<li class="list-group-item secondary main-submenu" data-target="mainMeal">Горячие блюда</li>
-						<li class="list-group-item secondary main-submenu" data-target="bbqDishes">Блюда на мангале</li>
-						<li class="list-group-item secondary main-submenu" data-target="bigCompanyDishes">Блюда для большой компании</li>
-						<li class="list-group-item secondary main-submenu" data-target="paste">Паста</li>
-						<li class="list-group-item secondary main-submenu" data-target="sideDishes">Гарнир</li>
-						<li class="list-group-item secondary main-submenu" data-target="pizza">Пицца</li>
-						<li class="list-group-item secondary main-submenu" data-target="khachapuri">Хачапури</li>
-						<li class="list-group-item secondary main-submenu" data-target="pies">Осетинские пироги</li>
-						<li class="list-group-item secondary main-submenu" data-target="pancakes">Блины</li>
-						<li class="list-group-item secondary main-submenu" data-target="burger">Бургеры</li>
-						<li class="list-group-item secondary main-submenu" data-target="beerDishes">Закуски к пиву</li>
-						<li class="list-group-item secondary main-submenu" data-target="sauces">Соусы</li>
-						<li class="list-group-item secondary main-submenu" data-target="bread">Хлеб</li>
-						<li class="list-group-item secondary main-submenu" data-target="desert">Десерты</li>
-
-						<li class="list-group-item primary bar-menu">Барное меню</li>
-						<li class="list-group-item secondary bar-submenu">Шоты</li>
-						<li class="list-group-item secondary bar-submenu">Апперетив</li>
-						<li class="list-group-item secondary bar-submenu">Коктейли</li>
-						<li class="list-group-item secondary bar-submenu">Вино белое</li>
-						<li class="list-group-item secondary bar-submenu">Вино розовое</li>
-						<li class="list-group-item secondary bar-submenu">Вино красное</li>
-						<li class="list-group-item secondary bar-submenu">Вино игристое</li>
-						<li class="list-group-item secondary bar-submenu">Крепкий алкоголь</li>
-						<li class="list-group-item secondary bar-submenu">Пиво бутылочное</li>
-						<li class="list-group-item secondary bar-submenu">Пиво разливное</li>
-						<li class="list-group-item secondary bar-submenu">Напитки</li>
-						<li class="list-group-item secondary bar-submenu">Чай и кофе</li>
-						<li class="list-group-item secondary bar-submenu">Курительные наборы</li>
-
-						<li class="list-group-item primary hookah-menu">Кальянная карта</li>
-						<li class="list-group-item secondary hookah-submenu">Кальяны</li>
-						<li class="list-group-item secondary hookah-submenu">Фрутовые чаши</li>
-						<li class="list-group-item secondary hookah-submenu">Добавки в колбу</li>
-
-						<li class="list-group-item primary banquet-menu">Банкетное меню</li>
-						<li class="list-group-item secondary banquet-submenu">Холодные закуски</li>
-						<li class="list-group-item secondary banquet-submenu">Салаты</li>
-						<li class="list-group-item secondary banquet-submenu">Горячие закуски</li>
-						<li class="list-group-item secondary banquet-submenu">Горячие блюда</li>
-						<li class="list-group-item secondary banquet-submenu">Паста</li>
-						<li class="list-group-item secondary banquet-submenu">Гарнир</li>
-						<li class="list-group-item secondary banquet-submenu">Пицца</li>
-						<li class="list-group-item secondary banquet-submenu">Хачапури</li>
-						<li class="list-group-item secondary banquet-submenu">Осетинские пироги</li>
-						<li class="list-group-item secondary banquet-submenu">Блины</li>
-						<li class="list-group-item secondary banquet-submenu">Закуски к пиву</li>
-						<li class="list-group-item secondary banquet-submenu">Блины</li>
-						<li class="list-group-item secondary banquet-submenu">Соусы</li>
-						<li class="list-group-item secondary banquet-submenu">Хлеб</li>
-						<li class="list-group-item secondary banquet-submenu">Десерты</li>
-
-						<li class="list-group-item primary special-menu">Поминальное меню</li>
-						<li class="list-group-item secondary special-submenu">Первые блюда</li>
-						<li class="list-group-item secondary special-submenu">Традиционная трапеза</li>
-						<li class="list-group-item secondary special-submenu">Блины</li>
-						<li class="list-group-item secondary special-submenu">Холодные закуски</li>
-						<li class="list-group-item secondary special-submenu">Салаты</li>
-						<li class="list-group-item secondary special-submenu">Горячие закуски</li>
-						<li class="list-group-item secondary special-submenu">Хачапури</li>
-						<li class="list-group-item secondary special-submenu">Осетинские пироги</li>
-						<li class="list-group-item secondary special-submenu">Горячее к гарниру</li>
-						<li class="list-group-item secondary special-submenu">Гарнир</li>
-						<li class="list-group-item secondary special-submenu">Десерты</li>
-						<li class="list-group-item secondary spacial-submenu">Напитки</li>
-					</ul>
-				</div>
-
-				<span class="menu-button menu-button-left">&nbsp</span>
-				<div class="menu-card_event row col-sm-9"></div>
-				<span class="menu-button menu-button-right">&nbsp</span>
-
-				<div class="table col-sm-3" id="table">
-					<h1>Расчёт заказа</h1>
-					<div>Выберете дату:<input type="date"></div>	
-					<div>Выберете время:<input type="time"></div>
-					<div>Количество гостей:<select>
-						<option selected value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-					</select></div>
-					<div><img src="img/table.png" alt=""></div>
-					<div>К оплате:<span></span></div>
-					<button class="btn btn-primary reserve-button">Бронировать</button>
-				</div>			
-			</div> -->
-		</div>
-
-		<!-- Модальное окно подтверждения бронирования -->
-		<div class="modal modal-dialog-centered reserve-window" tabindex="-1" role="dialog" data-backdrop="true"
-		data-keyboard="true">
-		<div class="modal-dialog">
-			<div class="modal-content reserve-window-content">
-				<div class="modal-header">
-					<button type="button" class="close close-reserve-window" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div>
-						<div>
-							<p>Полное имя</p>
-							<input type="text">
-						</div>
-						<div>
-							<p>Номер телефона</p>
-							<input type="tel">
-						</div>
-						<div class="custom-control custom-checkbox">
-							<input type="checkbox" class="custom-control-input" id="customCheck1" checked>
-							<label class="custom-control-label" for="customCheck1" value="true">согласие на обработку персональных данных</label>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary button-reserve-confirm">Отправить</button>
-				</div>
+		<div class="row">
+			<div class="col col-lg-12 col-md-12 col-xs-12 mx-auto menu-order-icons">
+				<img src="./img/menu-order/select-item.png">
+				<img src="./img/menu-order/add-item.png">
+				<img src="./img/menu-order/goto-order.png">
+				<img src="./img/menu-order/select-date.png">
 			</div>
 		</div>
 	</div>
 
-	<div class="modal modal-dialog-centered reserve-window-alert" tabindex="-1" role="dialog" data-backdrop="true"
-	data-keyboard="true">
-	<div class="modal-dialog">
-		<div class="modal-content reserve-window-content">
-			<div class="modal-header">
-				<button type="button" class="close close-reserve-window" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<div>
-					<p>Спасибо! Наш администратор свяжется с вами.</p>
-				</div>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-primary button-reserve-confirm-ok">
-					OK
-				</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="modal modal-dialog-centered warning" tabindex="-1" role="dialog" data-backdrop="true"
-data-keyboard="true">
-<div class="modal-dialog">
-	<div class="modal-content reserve-window-content">
-		<div class="modal-header">
-			<button type="button" class="close close-reserve-window" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			</button>
-		</div>
-		<div class="modal-body">
-			<div>
-				<p>Заполните все поля</p>
-			</div>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-primary warning-ok">
-				OK
-			</button>
-		</div>
-	</div>
-</div>
-</div>
-
-
-
-<!-- <div class="about section" id="lunch">
-	<div class="about-text"><h2>Ланч</h2>
-	</div>	
-</div> -->
 	<div class="container-fluid" id="menu">
 		<div class="row menu ">
-			<span class="menu-items-button-left mr-auto">&nbsp</span>
+		  <span class="menu-items-button-left ml-auto">&nbsp</span>
 			<div class="col-3 menu-items">
 				<ul class="list-group">
 				  <li class="list-group-item primary main-menu">Основное меню</li>
@@ -396,7 +214,7 @@ data-keyboard="true">
 				  	<li class="list-group-item secondary spacial-submenu" data-target="spdrinks">Напитки</li>
 				</ul>
 			</div>
-			<span class="menu-items-button-right ml-auto">&nbsp</span>
+			<span class="menu-items-button-right mr-auto">&nbsp</span>
 
 			<span class="menu-button menu-button-left">&nbsp</span>
 			<div class="menu-card row col-9"></div>
@@ -452,13 +270,10 @@ data-keyboard="true">
 						</div>
 
 					</div>
-					<div class="col col-sm-6 col-lg-4 lunch-center-col">
+					<div class="col-6 col-sm-6 col-lg-4  lunch-center-col">
 						<div>
 							<img class="lunch-photo" src="./img/lunch/sup-lapsha.png" alt="">
-							<p>
-								<span class="lunch-button-left"><img src="img/icons/back.png" alt=""></span>
-								<span class="lunch-button-right"><img src="img/icons/forward.png" alt=""></span>
-							</p>
+							<p><span class="lunch-button-left"><img src="img/icons/back.png" alt=""></span><span class="lunch-button-right"><img src="img/icons/forward.png" alt=""></span></p>
 						</div>
 					</div>
 					<div class="col col-sm-6 col-lg-4 lunch-right-col">
@@ -484,32 +299,105 @@ data-keyboard="true">
 			</div>	
 		</div>
 	</div>
+				<!-- Модальное окно подтверждения бронирования -->
+				<div class="modal modal-dialog-centered reserve-window" tabindex="-1" role="dialog" data-backdrop="true"
+				data-keyboard="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content reserve-window-content">
+			      <div class="modal-header">
+			        <button type="button" class="close close-reserve-window" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <div>
+			        	<div>
+				        	<p>Полное имя</p>
+				        	<input type="text">
+			        	</div>
+			        	<div>
+				        	<p>Номер телефона</p>
+				        	<input type="tel">
+			        	</div>
+			        	<div class="custom-control custom-checkbox">
+						  <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+						  <label class="custom-control-label" for="customCheck1" value="true">согласие на обработку персональных данных</label>
+						</div>
+			        </div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary button-reserve-confirm">Отправить</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 
-<!-- <div class="about section" id="events">
-	<div class="about-text"><h2>Мероприятия</h2>
-	</div>	
-</div> -->
+				<div class="modal modal-dialog-centered reserve-window-alert" tabindex="-1" role="dialog" data-backdrop="true"
+				data-keyboard="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content reserve-window-content">
+			      <div class="modal-header">
+			        <button type="button" class="close close-reserve-window" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <div>
+			        	<p>Спасибо! Наш администратор свяжется с вами.</p>
+			        </div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary button-reserve-confirm-ok">
+			        OK
+			    </button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 
-<!-- <div class="about section" id="photo">
-	<div class="about-text"><h2>ФОТО</h2>
-	</div>	
-</div>
--->
-<!-- <div class="about section" id="karaoke">
-	<div class="about-text"><h2>Караоке</h2>
-	</div>	
-</div> -->
+			<div class="modal modal-dialog-centered warning" tabindex="-1" role="dialog" data-backdrop="true"
+				data-keyboard="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content reserve-window-content">
+			      <div class="modal-header">
+			        <button type="button" class="close close-reserve-window" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <div>
+			        	<p>Заполните все поля</p>
+			        </div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary warning-ok">
+			        OK
+			    </button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 
-<!-- <div class="about section" id="hookah">
-	<div class="about-text"><h2>Кальян</h2>
-	</div>	
-</div> -->
+<!-- 		<div class="about section" id="photo">
+		<div class="about-text"><h2>ФОТО</h2>
+		</div>	
+	</div>
 
-<!-- <div class="about section" id="sport-translations">
-	<div class="about-text"><h2>Трансляции</h2>
-	</div>	
-</div>
--->
+	<div class="about section" id="karaoke">
+		<div class="about-text"><h2>Караоке</h2>
+		</div>	
+	</div>
+
+	<div class="about section" id="hookah">
+		<div class="about-text"><h2>Кальян</h2>
+		</div>	
+	</div>
+
+	<div class="about section" id="sport-translations">
+		<div class="about-text"><h2>Трансляции</h2>
+		</div>	
+	</div> -->
+
 <section class="event" id="events">
 	<div class="container py-5">
 		<div >
