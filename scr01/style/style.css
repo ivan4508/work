@@ -281,7 +281,7 @@
 	margin-bottom: 5vh;
 	margin-left: 10px;
 }
-.swiper-slide img{
+/* .swiper-slide img{
 	text-align: center;
 	transition-duration: 0s;
 	width: 100%;
@@ -290,7 +290,7 @@
 .swiper-slide img:hover{
 	width: 770px;
 	margin-left: -12px;
-}
+} */
 
 .menu-order h5{
 	text-align: center;
@@ -719,7 +719,7 @@
 }
 
 
-@media screen and (max-width:420px){
+@media screen and (max-width:992px){
 	.nav{
 		padding-left:0;
 	}

@@ -73,4 +73,21 @@ $(function(){
 		old_city_canvas.call($(this),0,30,'36px','1','#FFFFFF','1','#FF00FF');
 	});
 
+
+	function swiperSlide() {
+	$(this).on('mouseenter',function () {
+		$(this).animate({
+			"margin-left":"-12px"
+		},200)
+	})
+	$(this).on('mouseleave',function () {
+		$(this).animate({
+			"margin-left":"12px"
+		},200)
+	})
+}
+$(".swiper-slide").each(swiperSlide);
+
 })
+
+
