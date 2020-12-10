@@ -40,7 +40,23 @@
                    max-width: 100% ;
                 }
             }
+        
 
+        }
+        .gallery_container{
+            div{
+                max-width: 280px;
+                max-height: 190px;
+                overflow: hidden;
+                img{
+                    transition: all 0.5s ease-out;
+                    &:hover{
+                        transform: scale(1.2);
+                        max-width: 280px;
+                        max-height: 190px;
+                    }
+                }
+            }
         }
     }
     .background_gallery{

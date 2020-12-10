@@ -98,6 +98,10 @@ $('.nav a').on('click', function (e) {
         
         
     });
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
 
 
 })
